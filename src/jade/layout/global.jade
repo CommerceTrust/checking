@@ -14,8 +14,9 @@ html
     //- This 'block' is used to access Title and Meta Descriptions on unique pages
     block seo
   
-    link(href="#{config.serif}", rel="stylesheet", type="text/css")
-    link(href="#{config.sans}", rel="stylesheet", type="text/css")
+    each font in config.fonts
+      link(href="#{font}", rel="stylesheet", type="text/css")
+
     link(rel='stylesheet', type='text/css', href='style.css')
 
     script(src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
