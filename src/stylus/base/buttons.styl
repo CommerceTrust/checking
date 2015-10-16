@@ -1,0 +1,23 @@
+// Buttons
+[class*='__button']  
+  background-color: green
+  border: 0
+  border-radius: 3px
+  color: white
+  display: inline-block
+  font-size: 1rem
+  padding: 1rem 3rem
+  text-align: center
+  text-transform: uppercase
+  width: 340px
+
+  transition: all, 0.2s
+
+  +media("<=phone")
+    padding: 1rem
+    width: 240px
+
+  &:hover
+    background-color: pine
+    //border: 1px solid $darkgreen
+    color: white

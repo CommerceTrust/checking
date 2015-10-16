@@ -1,31 +1,19 @@
+// CONTAINER
+//  This is used to constrain the content of the site to a standard width
+
 [class*='__container']
+  display table
   margin: 0 auto
   max-width: 1200px
 
-
-
+// Basic column settings
 [class*='col-']
   display: table-cell
   vertical-align: middle
 
 
-// CONTAINER
-//  This is used to constrain the content of the site to a standard width
-[class*='__container']
-  margin: 0 auto
-  max-width: 1200px
 
-
-
-// All columns 1 - 12 are made with this little function
-columns = 12
-
-for i in (1..columns)
-  [class*=col-{i}-{columns}]
-    width: (i/columns) * 100%
-
-    //add include media queries here
-
+//Generate columns 1 - 12
 
 // col-1-12
 // col-2-12
@@ -40,17 +28,20 @@ for i in (1..columns)
 // col-11-12
 // col-12-12
 
+columns = 12
+
+for i in (1..columns)
+  [class*=col-{i}-{columns}]
+    width: (i/columns) * 100%
+
+    //add include media queries here
+
+
 .test--col-2-12
   background-color red
 
 
-colnames = half, third, fourth, fifth, sixth, seventh, eighth
-
-for i in (1..length(colnames))
-  [class*=col-{colnames[i+-1]}]
-    width: (1/(i+1)) * 100%
-
-
+// Generate Named columns
 // col-half
 // col-third
 // col-fourth
@@ -58,3 +49,9 @@ for i in (1..length(colnames))
 // col-sixth
 // col-seventh
 // col-eighth
+
+colnames = half, third, fourth, fifth, sixth, seventh, eighth
+
+for i in (1..length(colnames))
+  [class*=col-{colnames[i+-1]}]
+    width: (1/(i+1)) * 100%

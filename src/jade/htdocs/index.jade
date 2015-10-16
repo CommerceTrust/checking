@@ -10,16 +10,18 @@ block content
   header
     div.masthead
       div.masthead__container
-        div.masthead__logo
-          img(src='')
+        div.masthead__logo.pt
+          img(src='img/CommerceFDIC.png')
+          
         div.masthead__utilities
-          div.masthead__search
-            input 
-          ul.masthead__minor-nav
-            li.masthead__item
-              a(href='').masthead__link Contact Us
-            li.masthead__item
-              a(href='').masthead__link Find a Location
+          form.masthead__search(role="search", method="get", action="")
+            input.masthead__input(type="search", placeholder="", value="", name="s", title="")
+            button.masthead__button(type="submit")
+              div(data-icon="ei-search", data-size="m")
+ 
+          div.masthead__minor-nav
+            each link in nav.minor
+              a(href='#{link.url}').masthead__link= link.page
             
     nav
       ul.nav__container
