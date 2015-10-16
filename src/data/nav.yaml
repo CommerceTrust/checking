@@ -1,0 +1,29 @@
+main:
+  - page: get a recommendation
+    url: /get-a-recommendation/
+  - page: compare accounts
+    url: /compare-accounts/
+  - page: build your own
+    url: /build-your-own/
+  - page: service center
+    url: /service-center/
+
+minor:
+  - page: get a recommendation
+    url: /get-a-recommendation/
+  - page: compare accounts
+    url: /compare-accounts/
+  - page: build your own
+    url: /build-your-own/
+  - page: service center
+    url: /service-center/
+
+footer:
+  - page: get a recommendation
+    url: /get-a-recommendation/
+  - page: compare accounts
+    url: /compare-accounts/
+  - page: build your own
+    url: /build-your-own/
+  - page: service center
+    url: /service-center/

@@ -1,0 +1,34 @@
+title: RECOMMENDATION
+sub: Discover the checking account that’s perfect for you.
+desc: Want a recommendation of the best Commerce Checking account for you? Answer these questions to narrow down the options that fit your needs.
+
+accounts:
+  - name: mySpending Card®
+    brief: Your personal spending manager.
+    description: Easily keep track of everyday expenses with a reloadable prepaid card.
+    button: Learn More
+
+  - name: myDirect
+    brief: Checking for the digital age.
+    description: Stay in control of your checking account costs with no-fee electronic banking.
+    button: Learn More
+
+  - name: myRewards
+    brief: Bank when, where and how you want.
+    description: Get features that make banking convenient for you, plus get rewarded for saving.
+    button: Learn More
+
+  - name: Build Your Own Account
+    brief: An account that’s as unique as you.
+    description: Customize your checking account to perfectly fit your individual needs.
+    button: Learn More
+
+  - name: CommerceOptions® Plus
+    brief: More of what you want.
+    description: Get rewarded with better rates and enjoy discounts on the things you use most.
+    button: Learn More
+
+  - name: CommerceOptions® Premium
+    brief: The best in savings and rewards.
+    description: Experience our highest level of relationship benefits.
+    button: Learn More

@@ -2,17 +2,161 @@
 extends ../layout/global
 
 block seo
-  //title= title
-  //meta(name="description" content= description)
+  title Commerce Checking
+  meta(name="description" content="Commerce Checking description needed")
 
 
 block content
+  header
+    div.masthead
+      div.masthead__container
+        div.masthead__logo
+          img(src='')
+        div.masthead__utilities
+          div.masthead__search
+            input 
+          ul.masthead__minor-nav
+            li.masthead__item
+              a(href='').masthead__link Contact Us
+            li.masthead__item
+              a(href='').masthead__link Find a Location
+            
+    nav
+      ul.nav__container
+        li get a recommendation
+        li compare accounts
+        li build your own
+        li service center
+    div.banner
+      div.banner__content
+        h2.banner__headline Design your dream checking account today
+        ul.banner__list
+          li.banner__item--col-1-3
+            p.baner__number 1
+            p.banner__text Choose the checking account features that are right for you
+        p: a.banner__button Build Your Own
 
-  main.container
-    .main__container
-      - var love = me;
-      h1: icon(name="ei-check", size="m") hipster ipsum
-      h2= rename.blah
-      h2= global.lorem
-      h3 hello
-      p Hashtag bespoke actually four loko, craft beer gastropub bitters yr vinyl selvage. 90's fixie Carles, yr semiotics tattooed drinking vinegar Marfa photo booth kale chips street art Intelligentsia Kickstarter. Fashion axe bitters Neutra, cronut meggings try-hard High Life fap Truffaut semiotics tofu vinyl four dollar toast raw denim hoodie. Authentic kale chips pork belly, trust fund mustache kogi tattooed 3 wolf moon squid. Odd Future fingerstache craft beer, Neutra narwhal Echo Park occupy Blue Bottle hella fixie Austin cred. Biodiesel Vice cray taxidermy ennui Neutra. Meh fingerstache craft beer chambray banjo, drinking vinegar leggings Austin mlkshk bespoke lumbersexual Pitchfork fixie Kickstarter Williamsburg.
+    div.core
+      div.core__container
+        div.breadcrumb
+          a(href='').breadcrumb__text-link Commerce Bank
+          a(href='').breadcrumb__text-link Personal Banking
+          span Checking
+        div.callout
+          h2.callout__headline Discover the checkking account thats perfect for you.
+          p.callout__text Want us to recommend the best Commerce Checking account for you? Answer the questions below to help us narrow down your results and provide the right options for you.
+        div.coltainer
+          div.main-col--col-2-3
+            
+            div.picker__coltainer
+              h2.heading Get a Recommendation
+              a(href='').picker__text-link reset
+              div.choice__coltainer
+                div.choice__item--col-1-4
+                  p.choice__text Do you have a Commerce Bank Credit Card, Loan or Mortgage?
+                  div.choice__boolean
+                  a(href='') yes
+                  a(href='') no
+
+            ul.accounts__list
+              li.accounts__item
+                div.accounts--col-2-3
+                  h2.accounts__heading Build Your Own
+                  h3.accounts__subheading The checking account of your dreams
+                  p.accounts__text Customize your account to fit your unique needs with our Build Your Own Account option.
+                div.accounts--col-1-3
+                  p: a(href='').account__button
+
+          aside.sidebar__col-1-3
+            
+            div.sidebar__module
+              h2.sidebar__heading Not sure which account is right for you?
+              p.sidebar__text Inform your decision with a detailed side-by-side comparison.
+              a(href=).sidebar__button Compare All Accounts
+              
+            div.sidebar__module
+              h2.sidebar__heading Service Center
+              ul.sidebar__list
+                li.sidebar__item: a(href='').sidebar__text-link Frequently Asked Questions
+                li.sidebar__item: a(href='').sidebar__text-link Frequently Asked Questions
+                li.sidebar__item: a(href='').sidebar__text-link Frequently Asked Questions
+            
+            div.sidebar__module
+              ul.sidebar__list
+                li.sidebar__ltem
+                  div.sidebar__media--col-1-3
+                    img(src='')
+                  div.sidebar__content--col-2-3
+                    h2.sidebar__title Apple Pay
+                    p.sidebar__text A new way to pay with your Commerce bank Credit and Debit Card!
+
+        div.callout
+          h2.callout__headline Compare Accounts
+          p.callout__text Want to dig in deeper before choosing your checking account? use our comparison chart to see which account offers all the features and benefits you need.
+          a(href='').print
+
+        nav.account-nav
+          ul.account-nav__list
+            li.account-nav__item
+              a(href='').account-nav__button Build Your Own
+            li.account-nav__item
+              a(href='').account-nav__button myRewards
+            li.account-nav__item
+              a(href='').account-nav__button Build Your Own
+              
+        div.account-nav__list
+          li.account-nav__item--feature
+            h3.account__title Money Management
+            ul.account-feature__list
+              li.account-feature__item Free Standard Checking
+              li.account-feature__item Online Banking & Bill Pay
+              
+          li.account-nav__item--suggested
+            h3.account__title Build Your Own
+            h4.account__subtitle Most popular option
+            p: a(href='') Sign Up
+            ul.account-feature__list
+              li.account-feature__item -
+              li.account-feature__item x
+              
+          li.account-nav__item
+            h3.account__title Build Your Owns
+            p: a(href='') Sign Up
+            ul.account-feature__list
+              li.account-feature__item -
+              li.account-feature__item x
+          
+          
+    footer
+      div.callout
+        div.callout__content
+          h2.callout__headline
+          p.callout__text
+          p.callout__phone
+
+      div.branding
+        div.branding__container
+          div.branding__top
+            div.branding__logo--left
+              img.branding__logo
+            div.branding__meta--right
+              div.social-list--inline
+                a(href='').facebook
+                a(href='').twitter
+                a(href='').linkedin
+                a(href='').equal-lender
+                
+          div.branding__bottom
+            p.fineprint--left copyright
+            p.fineprint--right
+              a(href='') Visit Commerce Bank
+              a(href='') En Espanol
+
+      div.disclosures
+        div.disclosures__content
+          h2.disclosures__title
+          ul.disclosures__list
+            li.disclosures__item text text
+            li.disclosures__item text text
+
+          p: a(href='').text-link Deposit Agreement \& Disclosure
