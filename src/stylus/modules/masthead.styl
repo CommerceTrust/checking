@@ -1,8 +1,4 @@
-*
-  debug(cyan)
-
 .masthead
-
 
   &__container
     //
@@ -13,16 +9,12 @@
     vertical-align middle
     width 25%
 
-
-      img
-        //
-
   &__utilities
-    debug(green)
     display table-cell
     text-align right
     width 75%
 
+  // Minor right-hand nav
   &__minor-nav
     text-align right
 
@@ -32,20 +24,27 @@
   &__link
     //
 
-  // Search Form
+  // Search Form inside minor nav
   &__search
-    display: inline-block
+    display inline-block
+
+  &__fieldbox
+    display table
+    width 100%
 
   &__input
-      border: 1px solid cloud
-      color: $blue
-      padding: .5rem
+    border 1px solid cloud
+    color green
+    display table-cell
+    padding  .5rem
+    width 75%
+    text-align left
 
   &__button
-      background-color: green
-      border-radius: 0
-      border: none
-      height: 36px
-      padding: 0 .5rem
-      vertical-align: bottom
-      width: inherit
+    display table-cell
+    background-color green
+    border-radius 0
+    border none
+    text-align right
+    //vertical-align middle
+    width 25%

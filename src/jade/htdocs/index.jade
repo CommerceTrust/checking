@@ -8,18 +8,19 @@ block seo
 
 block content
   header
-    div.masthead
-      div.masthead__container
-        div.masthead__logo.pt
+    .masthead
+      .masthead__container
+        .masthead__logo.pt
           img(src='img/CommerceFDIC.png')
           
-        div.masthead__utilities
+        .masthead__utilities
           form.masthead__search(role="search", method="get", action="")
-            input.masthead__input(type="search", placeholder="", value="", name="s", title="")
-            button.masthead__button(type="submit")
-              div(data-icon="ei-search", data-size="m")
+            .masthead__fieldbox
+              input.masthead__input(type="search", placeholder="", value="", name="s", title="")
+              button.masthead__button(type="submit")
+                //icon(name="ei-search" size="s")
  
-          div.masthead__minor-nav
+          .masthead__minor-nav
             each link in nav.minor
               a(href='#{link.url}').masthead__link= link.page
             
@@ -29,8 +30,8 @@ block content
         li compare accounts
         li build your own
         li service center
-    div.banner
-      div.banner__content
+    .banner
+      .banner__content
         h2.banner__headline Design your dream checking account today
         ul.banner__list
           li.banner__item--col-1-3
@@ -38,61 +39,61 @@ block content
             p.banner__text Choose the checking account features that are right for you
         p: a.banner__button Build Your Own
 
-    div.core
-      div.core__container
-        div.breadcrumb
+    .core
+      .core__container
+        .breadcrumb
           a(href='').breadcrumb__text-link Commerce Bank
           a(href='').breadcrumb__text-link Personal Banking
           span Checking
-        div.callout
+        .callout
           h2.callout__headline Discover the checkking account thats perfect for you.
           p.callout__text Want us to recommend the best Commerce Checking account for you? Answer the questions below to help us narrow down your results and provide the right options for you.
-        div.coltainer
-          div.main-col--col-2-3
+        .coltainer
+          .main-col--col-2-3
             
-            div.picker__coltainer
+            .picker__coltainer
               h2.heading Get a Recommendation
               a(href='').picker__text-link reset
-              div.choice__coltainer
-                div.choice__item--col-1-4
+              .choice__coltainer
+                .choice__item--col-1-4
                   p.choice__text Do you have a Commerce Bank Credit Card, Loan or Mortgage?
-                  div.choice__boolean
+                  .choice__boolean
                   a(href='') yes
                   a(href='') no
 
             ul.accounts__list
               li.accounts__item
-                div.accounts--col-2-3
+                .accounts--col-2-3
                   h2.accounts__heading Build Your Own
                   h3.accounts__subheading The checking account of your dreams
                   p.accounts__text Customize your account to fit your unique needs with our Build Your Own Account option.
-                div.accounts--col-1-3
+                .accounts--col-1-3
                   p: a(href='').account__button
 
           aside.sidebar__col-1-3
             
-            div.sidebar__module
+            .sidebar__module
               h2.sidebar__heading Not sure which account is right for you?
               p.sidebar__text Inform your decision with a detailed side-by-side comparison.
               a(href=).sidebar__button Compare All Accounts
               
-            div.sidebar__module
+            .sidebar__module
               h2.sidebar__heading Service Center
               ul.sidebar__list
                 li.sidebar__item: a(href='').sidebar__text-link Frequently Asked Questions
                 li.sidebar__item: a(href='').sidebar__text-link Frequently Asked Questions
                 li.sidebar__item: a(href='').sidebar__text-link Frequently Asked Questions
             
-            div.sidebar__module
+            .sidebar__module
               ul.sidebar__list
                 li.sidebar__ltem
-                  div.sidebar__media--col-1-3
+                  .sidebar__media--col-1-3
                     img(src='')
-                  div.sidebar__content--col-2-3
+                  .sidebar__content--col-2-3
                     h2.sidebar__title Apple Pay
                     p.sidebar__text A new way to pay with your Commerce bank Credit and Debit Card!
 
-        div.callout
+        .callout
           h2.callout__headline Compare Accounts
           p.callout__text Want to dig in deeper before choosing your checking account? use our comparison chart to see which account offers all the features and benefits you need.
           a(href='').print
@@ -106,7 +107,7 @@ block content
             li.account-nav__item
               a(href='').account-nav__button Build Your Own
               
-        div.account-nav__list
+        .account-nav__list
           li.account-nav__item--feature
             h3.account__title Money Management
             ul.account-feature__list
@@ -130,32 +131,32 @@ block content
           
           
     footer
-      div.callout
-        div.callout__content
+      .callout
+        .callout__content
           h2.callout__headline
           p.callout__text
           p.callout__phone
 
-      div.branding
-        div.branding__container
-          div.branding__top
-            div.branding__logo--left
+      .branding
+        .branding__container
+          .branding__top
+            .branding__logo--left
               img.branding__logo
-            div.branding__meta--right
-              div.social-list--inline
+            .branding__meta--right
+              .social-list--inline
                 a(href='').facebook
                 a(href='').twitter
                 a(href='').linkedin
                 a(href='').equal-lender
                 
-          div.branding__bottom
+          .branding__bottom
             p.fineprint--left copyright
             p.fineprint--right
               a(href='') Visit Commerce Bank
               a(href='') En Espanol
 
-      div.disclosures
-        div.disclosures__content
+      .disclosures
+        .disclosures__content
           h2.disclosures__title
           ul.disclosures__list
             li.disclosures__item text text
