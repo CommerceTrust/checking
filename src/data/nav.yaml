@@ -16,6 +16,7 @@ minor:
   - page: Account Access
     url: /account-access/
 
+# TODO Update footer nav
 footer:
   - page: get a recommendation
     url: /get-a-recommendation/

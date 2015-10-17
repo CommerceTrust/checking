@@ -30,13 +30,13 @@
     <header>
       <div class="masthead">
         <div class="masthead__container">
-          <div class="masthead__logo pt"><img src="img/CommerceFDIC.png"></div>
+          <div class="masthead__logo pt"><a href="index.html" class="masthead__home-link"><img src="img/CommerceFDIC.png"></a></div>
           <div class="masthead__utilities">
             <form role="search" method="get" action="" class="masthead__search">
               <div class="masthead__fieldbox">
                 <input type="search" placeholder="" value="" name="s" title="" class="masthead__input">
                 <button type="submit" class="masthead__button">
-                  <!--icon(name="ei-search" size="s")-->
+                  <div class="icon icon--ei-search icon--s"><svg class="icon__cnt"><use xlink:href="#ei-search-icon" /></svg></div>
                 </button>
               </div>
             </form>
@@ -45,24 +45,26 @@
           </div>
         </div>
       </div>
-      <nav>
+      <nav class="nav">
         <ul class="nav__container">
-          <li>get a recommendation</li>
-          <li>compare accounts</li>
-          <li>build your own</li>
-          <li>service center</li>
+          <li class="nav__item"><a href="/get-a-recommendation/" class="nav__link">get a recommendation</a></li>
+          <li class="nav__item"><a href="/compare-accounts/" class="nav__link">compare accounts</a></li>
+          <li class="nav__item"><a href="/build-your-own/" class="nav__link">build your own</a></li>
+          <li class="nav__item"><a href="/service-center/" class="nav__link">service center</a></li>
         </ul>
       </nav>
       <div class="banner">
-        <div class="banner__content">
-          <h2 class="banner__headline">Design your dream checking account today</h2>
-          <ul class="banner__list">
-            <li class="banner__item--col-1-3">
-              <p class="baner__number">1</p>
-              <p class="banner__text">Choose the checking account features that are right for you</p>
-            </li>
-          </ul>
-          <p><a class="banner__button">Build Your Own</a></p>
+        <div class="banner__container">
+          <div class="banner__content">
+            <h2 class="banner__headline">Design your dream checking account today</h2>
+            <ul class="banner__list">
+              <li class="banner__item--col-1-3">
+                <p class="baner__number">1</p>
+                <p class="banner__text">Choose the checking account features that are right for you</p>
+              </li>
+            </ul>
+            <p><a class="banner__button">Build Your Own</a></p>
+          </div>
         </div>
       </div>
       <div class="core">

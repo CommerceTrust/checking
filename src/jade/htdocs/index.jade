@@ -1,3 +1,4 @@
+// TODO - Modularize
 
 extends ../layout/global
 
@@ -5,39 +6,38 @@ block seo
   title Commerce Checking
   meta(name="description" content="Commerce Checking description needed")
 
-
 block content
   header
     .masthead
       .masthead__container
         .masthead__logo.pt
-          img(src='img/CommerceFDIC.png')
+          a(href="index.html").masthead__home-link: img(src='img/CommerceFDIC.png')
           
         .masthead__utilities
           form.masthead__search(role="search", method="get", action="")
             .masthead__fieldbox
               input.masthead__input(type="search", placeholder="", value="", name="s", title="")
               button.masthead__button(type="submit")
-                //icon(name="ei-search" size="s")
+                icon(name="ei-search" size="s")
  
           .masthead__minor-nav
             each link in nav.minor
               a(href='#{link.url}').masthead__link= link.page
-            
-    nav
+     
+    nav.nav
       ul.nav__container
-        li get a recommendation
-        li compare accounts
-        li build your own
-        li service center
+        each link in nav.main
+          li.nav__item: a(href='#{link.url}').nav__link= link.page
+        
     .banner
-      .banner__content
-        h2.banner__headline Design your dream checking account today
-        ul.banner__list
-          li.banner__item--col-1-3
-            p.baner__number 1
-            p.banner__text Choose the checking account features that are right for you
-        p: a.banner__button Build Your Own
+      .banner__container
+        .banner__content
+          h2.banner__headline Design your dream checking account today
+          ul.banner__list
+            li.banner__item--col-1-3
+              p.baner__number 1
+              p.banner__text Choose the checking account features that are right for you
+          p: a.banner__button Build Your Own
 
     .core
       .core__container

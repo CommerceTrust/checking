@@ -94,6 +94,9 @@ import imagmin from 'gulp-imagemin'
 import imgpng from 'imagemin-pngquant'
 import changed from 'gulp-changed'
 
+// Todo
+import todo from 'gulp-todo'
+
 
 // Delpoy
 import ghp from 'gulp-gh-pages'
@@ -128,7 +131,14 @@ const watchPath = {
 //////////
 
 
-
+gulp.task('todo', () => {
+  gulp.src('./src/**/*.{jade,styl,js,yaml}')
+    .pipe(todo({
+      customTags: ['CRAZY']
+    }))
+    .pipe(gulp.dest('.'))
+    // -> Will output a TODO.md with your todos
+})
 
 var bundle = (bundler) => {
     return bundler
