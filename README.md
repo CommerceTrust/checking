@@ -5,19 +5,14 @@
 ## Stack
 - Jade
 - Gulp
-- Libsass (Indented Sass)
+- Stylus
 - GitHub
 
 ## Gulp build commands
 
-`gulp`
-
-This will compile everything and open the project in the browser for you. It will also watch for changes and refresh the browser on every save.
-
-`gulp ghp`
-This is used to copy all the files in the `dist` directory to the `gh-pages` branch for displaying the site.
-
-
+1. `gulp` - This will compile everything and open the project in the browser for you. It will also watch for changes and refresh the browser on every save.
+1. `gulp ghp` - This is used to copy all the files in the `dist` directory to the `gh-pages` branch for displaying the site.
+1. `gulp todo` - This will create a Markdown file named `todo.md` with all of the TODO comments through out all the js, jade, stylus and yaml files
 ---
 
 ## Environment URLs
@@ -63,10 +58,28 @@ This is used to copy all the files in the `dist` directory to the `gh-pages` bra
 
 
 ---
-### Gulp tasks
+### Resources
 
 Here is a brief explanation of the Gulp tasks
 
+
+#### Jade
+If you are new to Jade, these are some great resources
+
+- [To Engineers Who Tried to Use Jade Template Engine and Can’t Get Started](http://webapplog.com/jade/)
+- [Let Us Jade](http://codepen.io/pixelass/post/let-us-jade-1)
+- [Jade Syntax](http://codepen.io/pixelass/post/let-us-jade-2-explaining-the-syntax)
+- [Jade Interpolation and JS](http://codepen.io/pixelass/post/let-us-jade-3-interpolation-and-javascript)
+- [Jade Mixins on Steroids](http://codepen.io/pixelass/post/let-us-jade-4-mixins-on-steroids)
+
+
+#### Stylus
+If you are new to Stylus, you can write it just like, vanilla css, sass, or scss. All flavors work.
+
+- [Stylus](https://learnboost.github.io/stylus/)
+
+
+#### Yaml
 
 #### PostCSS
 

@@ -2,6 +2,13 @@
 //imports //
 ////////////
 
+
+// GULP-TODO - SVG Sprites: Compiles a spritesheet from a folder of SVGs
+
+// GULP-TODO - File size reporting
+
+// GULP-TODO - wire uglify to js task
+
 import gulp from 'gulp'
 
 
@@ -28,14 +35,9 @@ const plumberErrorHandler = { errorHandler: notify.onError({
  })
 }
 
+
 // Templating
 import jade from 'gulp-jade'
-//import yaml from 'gulp-yaml'
-//import md from 'marked'
-//import data from 'gulp-data' // import yaml straight into Jade?
-//import fmatter from 'gulp-front-matter' // Cna use jade for this
-
-
 import vinylYamlData from 'vinyl-yaml-data'
 import deepExtend from 'deep-extend-stream'
 var locals
@@ -69,16 +71,16 @@ const cssminOptions = {
   removeAllComments: true
 }
 
-// JS
-import concat from 'gulp-concat'
-import uglify from 'gulp-uglify'
 
+// JS
 import gutil from 'gulp-util'
 import source from 'vinyl-source-stream'
 import browserify from 'browserify'
 import watchify from 'watchify'
 import babelify from 'babelify'
 import exorcist from 'exorcist'
+
+import uglify from 'gulp-uglify'
 
 
 // Sourcemaps
@@ -94,7 +96,8 @@ import imagmin from 'gulp-imagemin'
 import imgpng from 'imagemin-pngquant'
 import changed from 'gulp-changed'
 
-// Todo
+
+// Todos
 import todo from 'gulp-todo'
 
 
@@ -132,9 +135,9 @@ const watchPath = {
 
 
 gulp.task('todo', () => {
-  gulp.src('./src/**/*.{jade,styl,js,yaml}')
+  gulp.src(['./src/**/*.{jade,styl,js,yaml}', './gulpfile.babel.js'])
     .pipe(todo({
-      customTags: ['CRAZY']
+      customTags: ['JS-TODO', 'JADE-TODO', 'CSS-TODO', 'YAML-TODO', 'GULP-TODO']
     }))
     .pipe(gulp.dest('.'))
     // -> Will output a TODO.md with your todos

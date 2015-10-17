@@ -2,20 +2,13 @@
 | Filename | line # | TODO
 |:------|:------:|:------
 | data/nav.yaml | 19 | Update footer nav
-| stylus/base/_rupture.styl | 6 | double check these settings
 | jade/htdocs/index.jade | 1 | - Modularize
-| jade/htdocs/index.jade | 27 | - awesome
+| stylus/base/_rupture.styl | 6 | double check these settings
+| gulpfile.babel.js | 100 | s
 
-### FIXMEs
-| Filename | line # | FIXME
+### GULP-TODOs
+| Filename | line # | GULP-TODO
 |:------|:------:|:------
-| jade/htdocs/index.jade | 8 | - blah
-
-### CRAZYs
-| Filename | line # | CRAZY
-|:------|:------:|:------
-| jade/htdocs/index.jade | 42 | this is nuts
-| jade/htdocs/index.jade | 44 | ok ok
-| jade/htdocs/index.jade | 46 | no more
-| jade/htdocs/index.jade | 48 | fine then
-| jade/htdocs/index.jade | 50 | lets do this
+| gulpfile.babel.js | 6 | - SVG Sprites: Compiles a spritesheet from a folder of SVGs
+| gulpfile.babel.js | 8 | - File size reporting
+| gulpfile.babel.js | 10 | - wire uglify to js task
