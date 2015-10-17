@@ -6,6 +6,7 @@
 - Jade
 - Gulp
 - Stylus
+- Yaml
 - GitHub
 
 ## Gulp build commands
